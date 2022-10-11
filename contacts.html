@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="header">
+        <nav class="header header-white">
             <div class="container">
                 <div class="logotype">
                     <a href="index.html">Fixxo.</a>
@@ -45,21 +45,26 @@
         </nav>
     </header>
 
-    <section class="showcase">
-        <div class="container">
-            <div class="showcase-body">
-                <img src="images/showcase-image-1.svg" alt="">
-                <div>
-                    <h1>SALE UP</h1>
-                    <h1>To 50% Off</h1>
-                    <p>Online shopping free home delivery over $100</p>
-                    <button class="btn btn-theme">SHOP NOW</button>
+    <section class="site-title">
+        <i class="fa-sharp fa-solid fa-house"></i>
+        <span>Contacts</span>
+    </section>
+    
+    <img class="map" src="./images/map.png" alt="location map">
+
+    <section class="contact-us">
+        <h1>Come in Contact with Us</h1>
+        <div class="form">
+            <form id="contactUsForm">
+                <div class="grid">
+                    <input class="contact_form" id="contact_name" type="text" placeholder="Your Name" required>
+                    <input class="contact_form" id="contact_email" type="email" placeholder="Your Mail" required>
+                    <textarea form="contactUsForm" class="contact_form" id="contact_comments" placeholder="Comments" required></textarea>
                 </div>
-                <img src="images/showcase-image-2.svg" alt="">
-            </div>
+                <button type="submit" class="btn btn-theme">Post Comments</button>                
+            </form>
         </div>
     </section>
-
 
     <footer>
         <div class="social-media">
@@ -73,7 +78,6 @@
             <span>© 2022 Fixxo. All Rights Reserved</span>
         </div>
     </footer>
-    
-    
+
 </body>
 </html>

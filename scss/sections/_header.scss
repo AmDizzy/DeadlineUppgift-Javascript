@@ -1,0 +1,95 @@
+.header {
+    background: $color-gradient;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+
+        .logotype {
+            flex: 1;
+            justify-content: flex-start;
+
+            a {
+                text-decoration: none;
+                color: $color-theme-dark;
+                font-weight: $font-weight-bold;
+                font-size: 2.2rem;
+    
+                &:hover {
+                    color: $color-theme;
+                }
+            }
+        }
+
+
+        .links {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                margin: 0 1rem;
+                text-align: center;
+                text-decoration: none;
+                color: $color-theme-dark;
+                font-weight: $font-weight-medium;
+
+                &:hover {
+                    color: $color-theme;
+                }
+            }
+        }
+
+        .round-buttons {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                margin: 0 0.6rem;
+                position: relative;
+                height: 2.25rem;
+                width: 2.25rem;
+                background-color: $color-white;
+                border-radius: $border-radius-rounded;
+                border: none;
+                box-shadow: 0 0 8px rgb(190, 190, 190);
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    background-color: $color-theme;
+                }
+
+                .badge {
+                    background-color: $color-theme;
+                    position: absolute;
+                    font-size: 0.69rem;
+                    width: 1rem;
+                    height: 1rem;
+                    padding: 3px 0 0 0;
+                    top: -0.3rem;
+                    left: 1.4rem;
+                }
+
+                &:hover .badge {
+                    background-color: $color-theme-dark;
+                }
+            }
+        }
+    }
+}
+
+
+.header-white {
+    background: none;
+}

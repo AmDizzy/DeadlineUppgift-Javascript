@@ -1,0 +1,54 @@
+.btn-theme {
+    position: relative;
+    display: flex;
+    background: $color-theme;
+    border-radius: 0;
+    border: none;
+    font-weight: $font-weight-semibold;
+    color: $color-white;
+    width: 11.75rem;
+    height: 3.75rem;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $color-theme-dark;
+        color: $color-white;
+    }
+}
+
+.btn-theme-dark {
+    display: flex;
+    background: $color-theme-dark;
+    border-radius: 0;
+    border: none;
+    font-weight: $font-weight-semibold;
+    color: $color-white;
+    width: 11.75rem;
+    height: 3.75rem;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $color-theme;
+        color: $color-white;
+    }
+}
+
+.btn-white {
+    display: flex;
+    background: $color-white;
+    border-radius: 0;
+    border: none;
+    font-weight: $font-weight-semibold;
+    color: $color-theme-dark;
+    width: 11.75rem;
+    height: 3.75rem;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $color-theme;
+        color: $color-white;
+    }
+}
