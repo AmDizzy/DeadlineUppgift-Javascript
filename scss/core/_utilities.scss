@@ -19,8 +19,8 @@
     @include xxl {
         max-width: $breakpoint-xxl-max-width;
     }
-    @include xxxl {
-        max-width: $breakpoint-xxxl-max-width;
+    @include fluid {
+        max-width: $breakpoint-fluid-max-width;
     }
 }
 

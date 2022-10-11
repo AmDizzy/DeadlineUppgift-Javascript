@@ -55,11 +55,23 @@
     <section class="contact-us">
         <h1>Come in Contact with Us</h1>
         <div class="form">
-            <form id="contactUsForm">
+            <form id="contactUsForm" onsubmit="onSubmit(event)" novalidate>
                 <div class="grid">
-                    <input class="contact_form" id="contact_name" type="text" placeholder="Your Name" required>
-                    <input class="contact_form" id="contact_email" type="email" placeholder="Your Mail" required>
-                    <textarea form="contactUsForm" class="contact_form" id="contact_comments" placeholder="Comments" required></textarea>
+                    <div class="contactUsName">
+                        <label id="contactUsName-label" for="contactUsName">Name</label>
+                        <input id="contactUsName" type="text" placeholder="Your Name" onkeyup="validate(event)" required data-required-min="2">
+                        <div id="contactUsName-error" class="text-danger"></div>    
+                    </div>
+                    <div class="contactUsEmail">
+                        <label id="contactUsEmail-label" for="contactUsEmail">Email</label>
+                        <input id="contactUsEmail" type="email" placeholder="Your Mail" onkeyup="validate(event)" required>
+                        <div id="contactUsEmail-error" class="text-danger"></div>    
+                    </div>
+                    <div class="contactUsComments">
+                        <label id="contactUsComments-label" for="contactUsComments">Comments</label>
+                        <textarea id="contactUsComments" form="contactUsForm" placeholder="Comments" onkeyup="validate(event)" required></textarea>
+                        <div id="contactUsComments-error" class="text-danger"></div>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-theme">Post Comments</button>                
             </form>

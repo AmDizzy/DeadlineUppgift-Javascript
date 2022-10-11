@@ -28,8 +28,8 @@
     }
 }
 
-@mixin xxxl {
-    @media (min-width: #{$breakpoint-xxxl}) {
+@mixin fluid {
+    @media (min-width: #{$breakpoint-fluid}) {
         @content
     }
 }
