@@ -1,5 +1,6 @@
 .showcase {
     background: $color-gradient-gray-10;
+    margin-bottom: 4rem;
 
     .container {
         padding-top: 1.5rem;
@@ -31,6 +32,11 @@
                 p {
                     padding: 1.5rem 0;
                     font-size: $font-size-20;
+                }
+
+                > a {
+                    width: 11.75rem;
+                    height: 3.75rem;
                 }
             }
         }
