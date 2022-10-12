@@ -12,14 +12,14 @@
     justify-content: center;
 
     &:hover {
-        background-color: $color-theme-dark;
+        background-color: $color-dark;
         color: $color-white;
     }
 }
 
 .btn-theme-dark {
     display: flex;
-    background: $color-theme-dark;
+    background: $color-dark;
     border-radius: 0;
     border: none;
     font-weight: $font-weight-semibold;
@@ -41,7 +41,7 @@
     border-radius: 0;
     border: none;
     font-weight: $font-weight-semibold;
-    color: $color-theme-dark;
+    color: $color-dark;
     width: 11.75rem;
     height: 3.75rem;
     align-items: center;

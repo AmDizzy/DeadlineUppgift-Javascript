@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 $color-theme: #FF7373;
-$color-theme-dark: #222529;
+$color-dark: #222529;
 $color-white: #ffffff;
+$color-silver: #CAC0BE;
 
-$color-gradient: linear-gradient(90deg, rgba(231,231,231,1) 0%, rgba(245,245,245,1) 100%);
+$color-gradient-gray-10: linear-gradient(90deg, rgba(231,231,231,1) 0%, rgba(245,245,245,1) 100%);
+// $color-gradient-gray-20: ;
 
 $color-gray-5: #f8f8f8;
 $color-gray-10: #ECECEC;
@@ -32,8 +34,8 @@ $breakpoint-lg: 992px;
 $breakpoint-lg-max-width: 960px;
 $breakpoint-xl: 1200px;
 $breakpoint-xl-max-width: 1140px;
-$breakpoint-xxl: 1450px;
-$breakpoint-xxl-max-width: 1420px;
-$breakpoint-fluid: 1700px;
-$breakpoint-fluid-max-width: 1684px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xxl-max-width: 1320px;
+$breakpoint-xxxl: 1600px;
+$breakpoint-xxxl-max-width: 1680px;
 @import "./breakpoints";
