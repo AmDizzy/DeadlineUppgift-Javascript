@@ -28,6 +28,9 @@ const validateElement = element => {
                 if (!isNullOrEmpty(element.value)) {
                     if (!isMinimumLength(element.value, element.dataset.requiredMin)) {
                         error = `Your ${label.toLocaleLowerCase()} must contain at least ${element.dataset.requiredMin} letters`
+                        document.getElementById(`${element.id}`).classList.add('text-danger')
+                    } else {
+                        document.getElementById(`${element.id}`).classList.remove('text-danger')
                     }
                 } else {
                     error = `You must enter a ${label.toLocaleLowerCase()}`
@@ -39,6 +42,9 @@ const validateElement = element => {
                 if (!isNullOrEmpty(element.value)) {
                     if (!isEmailValid(element.value)) {
                         error = `Your ${label.toLocaleLowerCase()} must be valid (eg. username@domain.com)`
+                        document.getElementById(`${element.id}`).classList.add('text-danger')
+                    } else {
+                        document.getElementById(`${element.id}`).classList.remove('text-danger')
                     }
                 } else {
                     error = `You must enter an ${label.toLocaleLowerCase()}`
@@ -46,13 +52,21 @@ const validateElement = element => {
 
                 break;
 
-            case 'textarea':
-                if (isNullOrEmpty(element.value))
-                    error = `You must enter a comment`
-                
-                break;
-        }
 
+                case 'textarea':
+                    if (!isNullOrEmpty(element.value)) {
+                        if (!isMinimumLength(element.value, element.dataset.requiredMin)) {
+                            error = `You must enter a comment`
+                            document.getElementById(`${element.id}`).classList.add('text-danger')
+                        } else {
+                            document.getElementById(`${element.id}`).classList.remove('text-danger')
+                        }
+                    } else {
+                        error = `You must enter a comment`
+                    }
+    
+                    break;
+        }
 
         document.getElementById(`${element.id}-error`).innerText = error
     }

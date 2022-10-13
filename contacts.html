@@ -21,7 +21,7 @@
                 <a href="index.html">Home</a>
                 <a href="#">Categories</a>
                 <a href="#">Products</a>
-                <a href="contacts.html">Contacts</a>
+                <a href="contacts.html" class="active-link">Contacts</a>
             </div>
             <div class="nav-icon-links">
                 <a href="#" id="search">
@@ -45,12 +45,14 @@
 
     <section class="site-title container">
         <div>
-            <i class="fa-sharp fa-solid fa-house"></i>
+            <a href="index.html"><i class="fa-sharp fa-solid fa-house"></i></a>
             <span>Contacts</span>
         </div>
     </section>
     
-    <img class="map" src="./assets/images/map.png" alt="location map">
+    <section class="map">
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289.471200336859!2d18.075405365646333!3d59.313186091363555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77c158b0df21%3A0x7f81200284fe9768!2sS%C3%B6dermalm%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1665676996807!5m2!1ssv!2sse" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
     <section class="contact-us container">
         <div class="form">
@@ -59,17 +61,17 @@
                 <div class="grid">
                     <div class="contactUsName">
                         <label id="contactUsName-label" for="contactUsName">Name</label>
-                        <input id="contactUsName" type="text" placeholder="Your Name" onkeyup="validate(event)" required data-required-min="2">
+                        <input id="contactUsName" class="" type="text" placeholder="Your Name" onkeyup="validate(event)" required data-required-min="2">
                         <div id="contactUsName-error" class="text-danger"></div>    
                     </div>
                     <div class="contactUsEmail">
                         <label id="contactUsEmail-label" for="contactUsEmail">Email</label>
-                        <input id="contactUsEmail" type="email" placeholder="Your Mail" onkeyup="validate(event)" required>
-                        <div id="contactUsEmail-error" class="text-danger"></div>    
+                        <input  id="contactUsEmail" type="email" placeholder="Your Mail" onkeyup="validate(event)" required>
+                        <div id="contactUsEmail-error" class="text-danger"></div>
                     </div>
                     <div class="contactUsComments">
                         <label id="contactUsComments-label" for="contactUsComments">Comments</label>
-                        <textarea id="contactUsComments" form="contactUsForm" placeholder="Comments" onkeyup="validate(event)" required></textarea>
+                        <textarea id="contactUsComments" form="contactUsForm" placeholder="Comments" onkeyup="validate(event)" required data-required-min="3"></textarea>
                         <div id="contactUsComments-error" class="text-danger"></div>
                     </div>
                 </div>
