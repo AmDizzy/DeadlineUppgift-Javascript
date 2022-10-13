@@ -1,24 +1,58 @@
-.contact-us {
-    margin: 4.4rem 25.3125rem 6.75rem 25.3125rem;
-
-    h1 {
-        font-weight: $font-weight-bold;
-        font-size: 1.125rem;
-        margin-bottom: 1.5rem;
-    }
-
+.site-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.25rem;
+    
     div {
+        width: 1100px;
+
+        i {
+            height: 1rem;
+            width: auto;
+        }
+    
+        span {
+            font-weight: $font-weight-medium;
+        }
+    }
+    
+
+
+}
+
+
+.map {
+    width: 100%;
+    height: auto;
+}
+
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.4rem;
+    margin-bottom: 6.75rem;
+
+    .form {
+        max-width: 1110px;
+
+        h1 {
+            font-weight: $font-weight-bold;
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+        }
 
         #contactUsForm {
 
             .grid {
                 
                 display: grid;
-                grid-template-columns: repeat(2, minmax(100px, 500px));
+                grid-template-columns: repeat(2, minmax(100px, 550px));
                 grid-template-rows: repeat(2, auto);
                 margin-bottom: 4rem;
                 column-gap: 2rem;
-
 
                 .contactUsName {
                     grid-column: 1 / 2;
@@ -32,7 +66,6 @@
                 }
 
                 > div {
-
 
                     label {
                         display: none;
@@ -64,35 +97,13 @@
                     > div {
                         height: 2rem;
                     }
-
                 }
-
             }
 
             button {
                 height: 50px;
                 width: 207px;
             }
-            
         }
     }
 }
-
-
-
-
-// .form-theme form input[type=text],
-// .form-theme form input[type=email],
-// .form-theme form input[type=password] {
-//     display: block;
-//     width: 100%;
-//     border: none;
-//     border-radius: var(--border-radius-small);
-//     padding: 0.6rem 0.9rem;
-//     margin: 0.2rem 0;
-// }
-//     .form-theme form input:focus {
-//         outline: 0;
-//         box-shadow: 0 0 3px 0 var(--color-gray-0);
-//     }
-
