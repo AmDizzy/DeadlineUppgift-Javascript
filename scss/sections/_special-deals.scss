@@ -1,0 +1,22 @@
+.special-deal {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+
+    .flash-sale {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        max-height: 100%;
+        max-width: 825px;
+        background-color: $color-gray-47;
+        
+    }
+
+    .row {
+        flex: 1;
+    }
+}

@@ -4,6 +4,19 @@
     max-height: 403px;
     justify-content: space-between;
 
+    .box-left,
+    .box-right {
+        
+        > div {
+
+            h1 {
+                font-size: 2.81rem;
+                color: $color-white;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+
     .box-left {
         display: flex;
         justify-content: space-between;
@@ -15,17 +28,6 @@
 
         > div {
             margin-right: 2rem;
-
-            h1 {
-                font-size: 2.81rem;
-                color: $color-white;
-                font-weight: $font-weight-bold;
-            }
-
-            a {
-                width: 188px;
-                height: 60px;
-            }
         }
     }
 
@@ -40,17 +42,6 @@
 
         > div {
             margin-left: 2rem;
-
-            h1 {
-                font-size: 2.81rem;
-                color: $color-dark;
-                font-weight: $font-weight-bold;
-            }
-
-            a {
-                width: 188px;
-                height: 60px;
-            }
         }
     }
 }
