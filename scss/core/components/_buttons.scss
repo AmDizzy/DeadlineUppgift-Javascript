@@ -49,6 +49,10 @@
     align-items: center;
     justify-content: center;
 
+    > h1 {
+        color: orange;
+    }
+
     .btn-theme-box-left,
     .btn-theme-box-right {
         position: absolute;
