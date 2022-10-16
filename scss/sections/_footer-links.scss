@@ -20,7 +20,7 @@
             width: 3.75rem;
             border-radius: $border-radius-rounded;
             box-shadow: 0 0.3rem 1rem rgb(190, 190, 190);
-            transition: all 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
 
             &:hover {
                 background-color: $color-theme;

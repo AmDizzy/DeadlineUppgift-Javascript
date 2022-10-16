@@ -50,6 +50,7 @@
             color: $color-dark;
             border-radius: $border-radius-rounded;
             box-shadow: 0 0 8px rgb(190, 190, 190);
+            transition: background-color 0.3s ease-in-out;
 
             &:first-child {
                 margin-left: 0;
@@ -69,6 +70,7 @@
                 padding: 3px 0 0 0;
                 top: -0.3rem;
                 left: 1.4rem;
+                transition: background-color 0.3s ease-in-out;
             }
 
             &:hover .badge {
