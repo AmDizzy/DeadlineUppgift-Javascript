@@ -1,22 +1,41 @@
 .special-deal {
+    display: flex;
+    flex-direction: column;
     margin-top: 4rem;
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    
-    .flash-sale {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: $color-gray-47;
-        width: 825px;
-        height: 669px;
-        margin: 0;
-    }
 
-    .row {
-        margin: 0;
+    .special-deal-2 {
+        margin-top: 4rem;
+    }
+    
+    > div {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        .flash-sale {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: $color-gray-47;
+            width: 825px;
+            height: 669px;
+            margin: 0;
+            color: $color-white;
+            font-size: $font-size-45;
+            font-weight: $font-weight-bold;
+        }
+    
+        .row {
+            margin: 0;
+
+            .col {
+
+                .card-body {
+                    align-items: flex-start;
+                }
+            }
+        }
     }
 }
